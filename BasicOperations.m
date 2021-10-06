@@ -6,13 +6,13 @@ ans = -17
 ans = 0.5000
 >> 2^6
 ans = 64
->> 1==2 %false
+>> 1==2
 ans = 0
 >> 1~=2
 ans = 1
->> 1&&0 %AND
+>> 1&&0
 ans = 0
->> 1||0 %OR
+>> 1||0
 ans = 1
 >> xor(1,0)
 ans = 1
@@ -21,7 +21,7 @@ ans = 6.3.0
 >> PS1('>> ');
 >> a=3
 a = 3
->> a=3; %semicolon suppressing output
+>> a=3; %semicolon suppresses output
 >> b='hi';
 >> b
 b = hi
@@ -45,7 +45,7 @@ a = 3.141592653589793
 >> format short
 >> a
 a = 3.1416
->> A=[1 2; 3 4; 5 6]
+>> A=[1 2; 3 4; 5 6] %semicolon means next line
 A =
 
    1   2
@@ -66,7 +66,6 @@ v =
 
    1   2   3
 
->> %semicolon means next line
 >> v=[1;2;3]
 v =
 
@@ -129,14 +128,13 @@ w =
 
    0.290451   0.091971   0.468130
 
->> rand(3,3)
+>> rand(3,3) %random numbers distributed uniformly between 0 and 1
 ans =
 
    0.4788   0.1519   0.7845
    0.4357   0.1335   0.9086
    0.2799   0.8465   0.6596
 
->> %random numbers distributed uniformly between 0 and 1
 >> rand(3,3)
 ans =
 
@@ -151,13 +149,12 @@ ans =
    0.3696   0.5092   0.8184
    0.7380   0.6925   0.3820
 
->> w=randn(1,3)
+>> w=randn(1,3) %random numbers from gaussian distribution with mean 0 and SD/variance 1
 w =
 
    1.5963  -0.6641   0.8712
 
->> %random values from gaussian distribution with mean 0 and SD/variance 1
->> w=-6+sqrt(10)*(randn(1,10000)); %vector of 10000 columns of gaussian random values
+>> w=-6+sqrt(10)*(randn(1,10000)); %vector of 10000 columns of gaussian random numbers
 >> hist(w)
 >> hist(w,50) %50 buckets
 >> eye(4)
